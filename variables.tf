@@ -1,6 +1,6 @@
 variable "randomName" {
   type    = string
-  default = "DTOR-TERRAFORM"
+  default = ""
 }
 
 variable "accountIds" {
@@ -15,7 +15,7 @@ variable "emailRecipients" {
 
 variable "complianceStandardName" {
   type    = string
-  default = "Terraform Standard"
+  default = ""
 }
 
 

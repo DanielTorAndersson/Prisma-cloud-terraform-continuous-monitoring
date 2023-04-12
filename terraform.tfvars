@@ -1,2 +1,2 @@
-accountIds = ["YOUR_ACCOUNT_ID"]
-emailRecipients = ["YOUR_EMAIL"]
+accountIds = ["425126350383"]
+emailRecipients = ["dtor@paloaltonetworks.com"]

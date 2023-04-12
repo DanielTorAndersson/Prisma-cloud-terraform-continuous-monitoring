@@ -73,7 +73,7 @@ resource "prismacloud_saved_search" "example2" {
   search_id   = prismacloud_rql_search.example2.search_id
   query       = prismacloud_rql_search.example2.query
   time_range {
-    relative {
+     relative {
       unit   = prismacloud_rql_search.example2.time_range.0.relative.0.unit
       amount = prismacloud_rql_search.example2.time_range.0.relative.0.amount
     }
@@ -84,7 +84,7 @@ resource "prismacloud_rql_search" "example2" {
   search_type = "config"
   query       = "config from cloud.resource where api.name = 'azure-kubernetes-cluster' AND json.rule = properties.enableRBAC is true"
   time_range {
-    relative {
+     relative {
       unit   = "hour"
       amount = 24
     }

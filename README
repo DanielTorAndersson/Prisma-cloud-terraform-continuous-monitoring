@@ -1,0 +1,24 @@
+This repo creates two sample policies, attach them to a compliance standard and create an alert rule attached to it.
+This is updated on a best-effort basis, and should be considered as an example for inspiration of using the Prisma terraform provider. 
+
+If adding more policies to the Policy.tf file, they also needs to be referenced in the AlertRule.tf to get continuous scanning activated. 
+This is done under the: policies = tolist
+We need to reference the newely created policy ID from the resource in Policy.tf file.
+
+The provider.tf are not configured, and assumes that the following ENV variables are configured in the environment:
+PRISMACLOUD_URL=
+PRISMACLOUD_USERNAME=
+PRISMACLOUD_PASSWORD=
+PRISMACLOUD_CUSTOMER_NAME=
+
+Update the terraform.tfvars with your relevant configuration;
+accountIds = ["YOUR_ACCOUNT_ID"]
+emailRecipients = ["YOUR_EMAIL"]
+
+See provier documentation for more details:
+https://registry.terraform.io/providers/PaloAltoNetworks/prismacloud/latest/docs
+
+
+To-Do
+Add output.tf file
+simplify policy creation

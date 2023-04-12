@@ -1,4 +1,4 @@
-accountIds = ["YOUR_ACCOUNT_ID"]
+accountIds = ["TEST"]
 emailRecipients = ["YOUR_EMAIL"]
 complianceStandardName = "Terraform Standard"
 randomName = "DTOR-TERRAFORM"
